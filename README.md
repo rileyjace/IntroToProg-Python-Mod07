@@ -1,4 +1,5 @@
-# IntroToProg-Python-Mod07
+# IntroToProg-Python-Mod07 - To see the figures, please open the word document within this repository
+
 Jace Riley
 IT FDN 100 A
 11/20/19
@@ -58,7 +59,9 @@ finally:
 Figure 3a.
  
 Figure 3b.
+
 How to research and utilize the pickle library. 
+
 The pickle library is utilized when converting an object into characters, called serializing or to pickle, or for reading those characters into an object called deserializing, or depickling. It is possible for any object in python to be pickled. The best place to obtain information about libraries are typically from that library’s documentation, or the python libraries documents page. In the case of the Pickle library, it is located at https://docs.python.org/3/library/pickle.html. The importance of checking this is it may contain information that is not listed in a typical website teaching about the library. In the case of the pickle library, from the website listed above we learn that the pickle module is not secure, and to only unpickle data that you trust. The other benefit of this website is that it gives you the information of all the classes in the libraries. Other websites are great for learning how to use the code, but this one gives you the information in an unopinionated manor. 
 Next we will demonstrate the use of pickling in a similar code to the home inventory code we wrote before. The first thing that was done was to define three functions: “enterData,” in Figure 4a, “readData,”in Figure 4b, and “saveData” in Figure 4c.
 def enterData():
@@ -73,14 +76,18 @@ def enterData():
         print("Sorry, incorrect entry type, please enter a integer value.")
     itemList.append(name + ', $' + str(value))
     print(itemList)
+    
 Figure 4a
+
 The enterData function goes through the error handling discussed earlier.
 def readData():
     objFile = open(fileName, "rb")
     list_of_data = pickle.load(objFile)
     objFile.close()
     print(list_of_data)
+    
 Figure 4b
+
 def saveData():
     print('Would you like to save your Data?')
     # Input is cast as a variable to allow for option to save or not.
@@ -92,8 +99,11 @@ def saveData():
         file.close()
     else:
         print('You have exited without saving')
+        
 Figure 4c
+
 Figure 4b is ultimately showing a depickling of data. The way that this code is written, the data needs to be saved through pickling first as in Figure 4c.
+
 The main body of the code that this runs through is listed in Figure 5.
 
 while True:
@@ -119,7 +129,9 @@ while True:
     elif option == '4':
         print("You have exited the program")
         break
+        
 Figure 5.
+
 First thing printed are the options. Option 1 runs through the enterData function which the results of that are listed in figure 6a. Once the data is entered it is important to save the data to the file which represented is in figure 6b. In this code the save action is pickling the information into a file. Once the file is saved you can read the data, which depickles that file. This is shown in Figure 6c, and the raw picked data is shown in figure 6d.
  
 Figure 6a.
