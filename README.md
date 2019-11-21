@@ -1,4 +1,4 @@
-# IntroToProg-Python-Mod07 - To see the figures, please open the word document within this repository link below
+# IntroToProg-Python-Mod07 - To see the figures, please download the word document within this repository link below
 [Assignment07 Document with figures](https://github.com/rileyjace/IntroToProg-Python-Mod07/blob/master/Assignment07Doc.docx)
 
 Jace Riley
