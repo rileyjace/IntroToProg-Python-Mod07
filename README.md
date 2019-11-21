@@ -1,5 +1,5 @@
 # IntroToProg-Python-Mod07 - To see the figures, please open the word document within this repository link below
-[Github Webpage Module 06](https://github.com/rileyjace/IntroToProg-Python-Mod07/blob/master/Assignment07Doc.docx)
+[Assignment07 Document with figures](https://github.com/rileyjace/IntroToProg-Python-Mod07/blob/master/Assignment07Doc.docx)
 
 Jace Riley
 IT FDN 100 A
