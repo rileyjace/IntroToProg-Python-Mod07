@@ -1,12 +1,17 @@
 # IntroToProg-Python-Mod07
 Jace Riley
-Randal Root
 IT FDN 100 A
 11/20/19
+
 Error Handling and Pickling
+
 Introduction
+
 This document is to be used as a training aid on how to error handle in python, how pickling works and is to be used within any Python GUI. It may also be utilized to help further personal research.
+
+
 How to error handle within Python
+
 There are essentially two types of errors in Python: Syntax Error and Exception. A syntax error is when the Python parser is unable to understand a line of code. This could be something as simple as a period in the wrong place, a space in the wrong place, or a misspelled function. An exception is an error that is detected while the code is executing. Python has quite a few built-in exceptions. A decent list of some of them can be found at “https://www.tutorialsteacher.com/python/error-types-in-python” 
 There is a way that a programmer can handle these errors within their code. This is through a try-except statement. A try clause is executed, and if it succeeds the except clause is skipped. If the try statement does not work then it immediately goes to the except clause. A basic version of the try except statement is in Figure 1a below, where the function is stated first and the try and except will be tested on that function. In this case the function is to divide two numbers. Figure 1b shows the output of this.
 
@@ -23,7 +28,11 @@ except:
     print("An exception occurred.")
 Figure 1a
  
+
 Figure 1b.
+
+
+
 A slightly more advanced version of the try except statement includes the actual error clause that is being broken in the code. An example of that is in Figure 2a where the “ZeroDivisionError” is being tested. Figure 2b has the output.
 print("\nEnter a zero as your second number.\n")
 try:
